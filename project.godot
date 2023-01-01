@@ -11,7 +11,18 @@ config_version=4
 [application]
 
 config/name="A"
+run/main_scene="res://Data/Scenes/Menu.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=1920
+window/size/height=1080
+window/size/borderless=true
+window/size/fullscreen=true
+window/energy_saving/keep_screen_on=false
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
 
 [gui]
 
@@ -20,6 +31,7 @@ common/drop_mouse_on_gui_input_disabled=true
 [physics]
 
 common/enable_pause_aware_picking=true
+2d/physics_engine="GodotPhysics"
 
 [rendering]
 
