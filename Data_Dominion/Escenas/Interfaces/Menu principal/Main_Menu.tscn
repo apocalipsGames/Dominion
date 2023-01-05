@@ -1,3 +1,10 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Data_Dominion/Sprites/Iconos/Dominion Logo.png" type="Texture" id=1]
 
 [node name="Main_Menu" type="Node2D"]
+
+[node name="Logo_Dominion" type="Sprite" parent="."]
+position = Vector2( 960, 240 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 1 )

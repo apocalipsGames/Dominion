@@ -10,8 +10,9 @@ config_version=4
 
 [application]
 
-config/name="A"
-run/main_scene="res://Data/Scenes/Menu.tscn"
+config/name="Dominion"
+run/main_scene="res://Data_Dominion/Escenas/Interfaces/Menu principal/Main_Menu.tscn"
+boot_splash/image="res://Data_Dominion/Sprites/Iconos/Dominion Icon-2.png.png"
 config/icon="res://icon.png"
 
 [display]
