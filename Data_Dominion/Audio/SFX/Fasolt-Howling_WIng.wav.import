@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Fasolt-Howling_WIng.wav-57206b1ec8a6987cc2fd9ffe47c6e722.sample"
+
+[deps]
+
+source_file="res://Data_Dominion/Audio/SFX/Fasolt-Howling_WIng.wav"
+dest_files=[ "res://.import/Fasolt-Howling_WIng.wav-57206b1ec8a6987cc2fd9ffe47c6e722.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
