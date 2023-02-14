@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Data_Dominion/Scripts/Hunters/FPC/PlayerShooter.gd" type="Script" id=1]
+[ext_resource path="res://Data_Dominion/Sprites/Iconos/ButtonA.png" type="Texture" id=2]
+
+[node name="PlayerShooter" type="Node2D"]
+rotation = 2.18166
+script = ExtResource( 1 )
+
+[node name="StartBullet" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="StartBullet"]
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 2 )

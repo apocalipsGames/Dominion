@@ -1,3 +1,178 @@
-[gd_scene format=2]
+[gd_scene load_steps=23 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=1]
+[ext_resource path="res://Data_Dominion/Scripts/Menus/LobbyPrincipal.gd" type="Script" id=2]
+[ext_resource path="res://Data_Dominion/Escenas/Interfaces/Lobby/HunterSelector.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Data_Dominion/Sprites/Iconos/HunterButton (1).png" type="Texture" id=4]
+[ext_resource path="res://Data_Dominion/Sprites/Iconos/QuestButton.png" type="Texture" id=5]
+[ext_resource path="res://Data_Dominion/Sprites/Iconos/LeftBumper.png" type="Texture" id=6]
+[ext_resource path="res://Data_Dominion/Sprites/Iconos/ButtonX.png" type="Texture" id=7]
+[ext_resource path="res://Data_Dominion/Sprites/Fondos/WhiteBG.png" type="Texture" id=8]
+[ext_resource path="res://Data_Dominion/Sprites/Iconos/PlayDominion.png" type="Texture" id=9]
+[ext_resource path="res://Data_Dominion/Sprites/Iconos/ButtonY.png" type="Texture" id=10]
+[ext_resource path="res://Data_Dominion/Sprites/Fondos/BlackBG.png" type="Texture" id=11]
+[ext_resource path="res://Data_Dominion/Sprites/Fondos/LobbyBG.png" type="Texture" id=12]
+[ext_resource path="res://Data_Dominion/Sprites/Iconos/BannerDominion.png" type="Texture" id=13]
+[ext_resource path="res://Data_Dominion/Sprites/Iconos/SettingsButton.png" type="Texture" id=14]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 9 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 14 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=6]
+animations = [ {
+"frames": [  ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=7]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=8]
+animations = [ {
+"frames": [ ExtResource( 11 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
 
 [node name="LobbyPrincipal" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 960, 540 )
+texture = ExtResource( 12 )
+
+[node name="Banner" type="Sprite" parent="."]
+position = Vector2( 189, 624.5 )
+scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 13 )
+
+[node name="Boton1" type="AnimatedSprite" parent="."]
+position = Vector2( 1600, 865 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Boton2" type="AnimatedSprite" parent="."]
+position = Vector2( 85, 749 )
+scale = Vector2( 0.15, 0.15 )
+frames = SubResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Boton3" type="AnimatedSprite" parent="."]
+position = Vector2( 85, 500 )
+scale = Vector2( 0.15, 0.15 )
+frames = SubResource( 3 )
+
+[node name="Boton4" type="AnimatedSprite" parent="."]
+position = Vector2( 1729, 110 )
+scale = Vector2( 0.25, 0.25 )
+frames = SubResource( 4 )
+
+[node name="Boton5" type="AnimatedSprite" parent="."]
+position = Vector2( 1849, 333 )
+scale = Vector2( 1.39063, 2.59375 )
+frames = SubResource( 5 )
+
+[node name="Boton6" type="AnimatedSprite" parent="."]
+frames = SubResource( 6 )
+
+[node name="Boton7" type="AnimatedSprite" parent="."]
+position = Vector2( 1851.75, 530.625 )
+scale = Vector2( 1.32031, 2.79297 )
+frames = SubResource( 7 )
+
+[node name="Boton8" type="AnimatedSprite" parent="."]
+position = Vector2( 215, 120 )
+scale = Vector2( 0.15, 0.15 )
+frames = SubResource( 8 )
+
+[node name="L1" type="Sprite" parent="."]
+position = Vector2( 84, 845 )
+scale = Vector2( 0.09, 0.09 )
+texture = ExtResource( 6 )
+
+[node name="ButtonX" type="Sprite" parent="."]
+position = Vector2( 88, 584 )
+scale = Vector2( 0.09, 0.09 )
+texture = ExtResource( 7 )
+
+[node name="ButtonY" type="Sprite" parent="."]
+position = Vector2( 215, 215 )
+scale = Vector2( 0.09, 0.09 )
+texture = ExtResource( 10 )
+
+[node name="PlayButton" type="Position2D" parent="."]
+position = Vector2( 1280, 885 )
+
+[node name="ShopButton" type="Position2D" parent="."]
+position = Vector2( 1760, 540 )
+
+[node name="Button" type="Position2D" parent="."]
+position = Vector2( 1760, 330 )
+
+[node name="SettingsButton" type="Position2D" parent="."]
+position = Vector2( 1540, 110 )
+
+[node name="Marcador" type="Sprite" parent="."]
+position = Vector2( 1280, 885 )
+scale = Vector2( 0.05, 0.05 )
+texture = ExtResource( 8 )
+
+[node name="HunterSelector" parent="." instance=ExtResource( 3 )]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="LineDominion" type="Sprite" parent="."]
+position = Vector2( 960, 1060 )
+scale = Vector2( 1, 0.04 )
+texture = ExtResource( 11 )

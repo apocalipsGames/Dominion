@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Dominion Logo.png-cfc61184f0b114d403b855cdf2db77c6.stex"
+path="res://.import/LobbyBG.png-c9e055014bd98ccdab44882cb5ee5506.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Data_Dominion/Sprites/Iconos/Dominion Logo.png"
-dest_files=[ "res://.import/Dominion Logo.png-cfc61184f0b114d403b855cdf2db77c6.stex" ]
+source_file="res://Data_Dominion/Sprites/Fondos/LobbyBG.png"
+dest_files=[ "res://.import/LobbyBG.png-c9e055014bd98ccdab44882cb5ee5506.stex" ]
 
 [params]
 

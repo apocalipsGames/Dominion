@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Data_Dominion/Scripts/Hunters/FPC/FPC.gd" type="Script" id=1]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 30.0
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [  ],
+"loop": true,
+"name": "Aim-0",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "Nahur-0",
+"speed": 5.0
+} ]
+
+[node name="PlayerController" type="KinematicBody2D"]
+script = ExtResource( 1 )
+
+[node name="RaycastWall" type="RayCast2D" parent="."]
+enabled = true
+cast_to = Vector2( 0, 60 )
+
+[node name="PlayerCollider" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Camera" type="Camera2D" parent="."]
+current = true
+
+[node name="HunterSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, 30 )
+frames = SubResource( 2 )
+animation = "Nahur-0"
